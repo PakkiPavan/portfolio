@@ -47,7 +47,7 @@ const Sidebar = () =>{
 			</figure>
 			<div className="sidebar__contact">
 				<div className="sidebar__item sidebar__github">
-					<a href="https://github.com/pakkipavan"><img src={github} alt="github" className="sidebar__icon mr-3"/>Github</a>
+					<a href="https://github.com/pakkipavan" rel="noopener noreferrer" target="_blank"><img src={github} alt="github" className="sidebar__icon mr-3"/>Github</a>
 				</div>
 				<div className="sidebar__location">
 					<img src={pin} alt="location" className="sidebar__icon mr-3"/>
