@@ -1,12 +1,15 @@
 import React from "react";
-import facebook from "../assets/icons/facebook.svg";
-import instagram from "../assets/icons/instagram.svg";
-import github from "../assets/icons/github.svg";
-import pin from "../assets/icons/pin.svg";
-import tie from "../assets/icons/tie.svg";
 import mightycoder from "../assets/mightycoder.svg";
 import resume from "../assets/resume.pdf";
 import { motion } from "framer-motion";
+import { 
+	FaDownload,
+	FaGithub,
+	FaMapMarkerAlt,
+	FaEnvelope,
+	FaMobileAlt,
+	FaPhoneAlt
+} from "react-icons/fa";
 
 const Sidebar = () =>{
 	const handleEmailMe=()=>{
@@ -30,35 +33,69 @@ const Sidebar = () =>{
 			animate="visible"
 		>
 			<img src={mightycoder} alt="avatar" className="sidebar__avatar"/>
-			<div className="sidebar__name"><span>Pakki</span>Pavan</div>
+			<div className="sidebar__name">Pakki Pavan</div>
 			<div className="sidebar__item sidebar__title">Web developer</div>
-			<a href={resume} download="resume.pdf">
+			{/* <a href={resume} download="resume.pdf">
 				<div className="sidebar__item sidebar__resume">
-					<img src={tie} alt="resume" className="sidebar__icon"/> Download Resume
+					<FaDownload className="mr-1 mb-1"/> Download Resume
 				</div>
-			</a>
-			<figure className="sidebar__social-icons my-2">
+			</a> */}
+			{/* <figure className="sidebar__social-icons my-2">
 				<a href="#facebook">
-					<img src={facebook} alt="facebook" className="sidebar__icon mr-3"/>
+					<FaFacebookSquare size={23}/>
 				</a>
 				<a href="#instagram">
-					<img src={instagram} alt="instagram" className="sidebar__icon"/>
+					<FaInstagramSquare size={23}/>
 				</a>
-			</figure>
-			<div className="sidebar__contact">
+			</figure> */}
+			{/* <div className="sidebar__contact">
 				<div className="sidebar__item sidebar__github">
-					<a href="https://github.com/pakkipavan" rel="noopener noreferrer" target="_blank"><img src={github} alt="github" className="sidebar__icon mr-3"/>Github</a>
+					<a href="https://github.com/pakkipavan" rel="noopener noreferrer" target="_blank">
+						<FaGithub size={23} className="mr-1 mb-1"/>Github
+					</a>
 				</div>
 				<div className="sidebar__location">
-					<img src={pin} alt="location" className="sidebar__icon mr-3"/>
+					<FaMapMarkerAlt size={23}/>
 					Chennai, India
 				</div>
-				<div className="sidebar__item">pavanpakki786@gmail.com</div>
-				<div className="sidebar__item">7702556730</div>
-			</div>
-			<div className="sidebar__item sidebar__email" onClick={handleEmailMe}>
+				<div className="sidebar__item">
+					<FaEnvelope/>pavanpakki786@gmail.com
+				</div>
+				<div className="sidebar__item">
+					<FaPhoneAlt className="mr-1 mb-1"/>+91 7702556730
+				</div>
+			</div> */}
+			<table className="profile-information">
+				<tr>
+					<td className="profile-information__td1"><FaGithub size={23}/></td>
+					<td style={{textAlign:"left"}}>Github</td>
+				</tr>
+				<tr>
+					<td className="profile-information__td1"><FaMapMarkerAlt size={23}/></td>
+					<td style={{textAlign:"left"}}>Chennai, India</td>
+				</tr>
+				<tr>
+					<td className="profile-information__td1"><FaEnvelope/></td>
+					<td style={{textAlign:"left"}}>pavanpakki786@gmail.com</td>
+				</tr>
+				<tr>
+					<td className="profile-information__td1"><FaPhoneAlt/></td>
+					<td style={{textAlign:"left"}}>+91 7702556730</td>
+				</tr>
+        	</table>
+			{/* <a href={resume} download="resume.pdf">
+				<div className="sidebar__item sidebar__resume">
+					<FaDownload className="mr-1 mb-1"/> Download Resume
+				</div>
+			</a> */}
+			{/* <div className="sidebar__item sidebar__email" onClick={handleEmailMe}>
 				Email Me
-			</div>
+			</div> */}
+			<a href={resume} download="resume.pdf">
+				<div className="sidebar__item sidebar__button">
+					<FaDownload className="mr-1 mb-1"/> Download CV
+				</div>
+			</a>
 		</motion.div>
 	);
 }

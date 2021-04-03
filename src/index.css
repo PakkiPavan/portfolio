@@ -41,7 +41,8 @@ a:hover {
 	background-color:#fff;
 	height:100%;
 	border-radius:20px;
-	padding:25px 15px;
+	/* padding:25px 15px; */
+    padding:25px;
 	box-shadow:0 0 10px black;
 	text-align: center;
 }
@@ -56,13 +57,16 @@ a:hover {
 	height:25px;
 }
 .sidebar__name{
-	font-family: 'Kaushan Script';
+	/* font-family: 'Kaushan Script'; */
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
     margin: 20px 0;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
-.sidebar__name>span{
+/* .sidebar__name>span{
 	color:#00F260;
-}
+} */
 .sidebar__item{
 	margin-bottom: 6px;
     padding-top: 6px;
@@ -88,14 +92,65 @@ a:hover {
     cursor: pointer;
     transition: all 3s linear;
 }
-.sidebar__email:hover {
-    transform: scale(1.2);
+.sidebar__button {
+    /* background-image: linear-gradient(to right bottom, #00F260, #0575E6); */
+	/* background-image:linear-gradient(to right bottom, #2193b0,#6dd5ed); */
+    background-color: #2193b0;
+    border-radius: 25px !important;
+    color: #fff;
+    margin: 15px 25px 0px;
+    cursor: pointer;
+    transition: all 3s linear;
 }
+/* .sidebar__email:hover {
+    transform: scale(1.2);
+} */
 .sidebar__github:hover,
 .sidebar__resume:hover {
     background-color: #f1f1f2;
     color: #000;
 }
+ul.profile-information{
+    list-style: none;
+    /* margin: 8px 0px 8px 35px; */
+}
+table.profile-information td{
+    /* border-left: solid 2px #eee;
+    padding: 0 0 23px 20px;
+    color: #787878; */
+    font-size: 1rem;
+    padding:8px 0;
+}
+.profile-information__td1{
+    padding:0 2px !important;
+    color:#2193b0;
+}
+/* ul.profile-information li p{
+    font-size: 13.5px;
+    color: #7F7F7F;
+    line-height: 12px;
+} */
+/* ul.profile-information li:last-child{
+    border: 0;
+    margin-left: 2px;
+    margin-top: -2px;
+} */
+/* ul.profile-information li:before{
+    content: "";
+    border: solid 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    font-size: 8px;
+    margin-left: -25px;
+    margin-top: 2px;
+    font-weight: 400;
+    background: #fff;
+    display: block;
+    position: absolute;
+} */
 @media(max-width:991px) {
     .app__main-content {
         margin: 30px 0;
