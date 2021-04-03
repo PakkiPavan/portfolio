@@ -7,14 +7,13 @@ import {
 	FaGithub,
 	FaMapMarkerAlt,
 	FaEnvelope,
-	FaMobileAlt,
 	FaPhoneAlt
 } from "react-icons/fa";
 
 const Sidebar = () =>{
-	const handleEmailMe=()=>{
-		window.open("mailto:pavanpakki007@gmail.com")
-	};
+	// const handleEmailMe=()=>{
+	// 	window.open("mailto:pavanpakki007@gmail.com")
+	// };
 	const sidebar_variant={
         hidden:{
             x:"-20vw"
