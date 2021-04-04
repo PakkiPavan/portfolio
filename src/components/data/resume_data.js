@@ -1,33 +1,50 @@
-import Dot from "../../assets/icons/Dot.svg";
-import python from "../../assets/icons/python.svg";
+import { 
+	FaJs,
+    FaReact,
+    FaHtml5,
+    FaCss3Alt,
+    FaNodeJs,
+    FaCode
+} from "react-icons/fa";
+import { 
+    DiEclipse,
+    DiGithubBadge
+ } from "react-icons/di";
+
 const languages=[
     {
-        icon:python,
+        icon:FaJs,
+        iconSize:20,
         name:"JavaScript",
         level:"60"
     },
     {
-        icon:Dot,
+        icon:FaReact,
+        iconSize:20,
         name:"React JS",
         level:"70"
     },
     {
-        icon:Dot,
+        icon:FaHtml5,
+        iconSize:20,
         name:"HTML",
         level:"80"
     },
     {
-        icon:Dot,
+        icon:FaCss3Alt,
+        iconSize:20,
         name:"CSS",
         level:"60"
     },
     {
-        icon:Dot,
+        icon:FaNodeJs,
+        iconSize:20,
         name:"Node JS",
         level:"70"
     },
     {
-        icon:Dot,
+        icon:FaNodeJs,
+        iconSize:20,
         name:"Express JS",
         level:"80"
     }
@@ -35,17 +52,20 @@ const languages=[
 
 const tools=[
     {
-        icon:Dot,
+        icon:FaCode,
+        iconSize:20,
         name:"VS Code",
         level:"80"
     },
     {
-        icon:Dot,
+        icon:DiEclipse,
+        iconSize:23,
         name:"Eclipse",
         level:"60"
     },
     {
-        icon:Dot,
+        icon:DiGithubBadge,
+        iconSize:23,
         name:"Git",
         level:"80"
     }

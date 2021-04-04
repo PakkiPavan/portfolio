@@ -2,6 +2,10 @@ import React from 'react'
 import { motion } from "framer-motion";
 import Bar from './Bar';
 import {tools,languages} from "./data/resume_data";
+import { 
+	FaGraduationCap,
+    FaSuitcase
+} from "react-icons/fa";
 
 const Resume = () => {
     const resume_variants = {
@@ -31,11 +35,14 @@ const Resume = () => {
             <div className="row">
                 <div className="col-lg-6 resume-card">
                     <h4 className="resume-card__heading">
+                        <span style={{color:"#2193b0"}}>
+                            <FaGraduationCap size={30} className="mr-2 mb-1"/>
+                        </span>
                         Education
                     </h4>
                     <div className="resume-card__body">
                         <h5 className="resume-card__title">
-                            Electronics and Communication Engineering (ECE)
+                            Bachelor of Technology
                         </h5>
                         <p className="resume-card__name">
                             Raghu Engineering College (2014-2018)
@@ -47,6 +54,9 @@ const Resume = () => {
                 </div>
                 <div className="col-lg-6 resume-card">
                     <h4 className="resume-card__heading">
+                        <span style={{color:"#2193b0"}}>
+                            <FaSuitcase size={25} className="mr-2 mb-2"/>
+                        </span>
                         Experience
                     </h4>
                     <div className="resume-card__body">
@@ -54,7 +64,7 @@ const Resume = () => {
                             Tata Consultancy Services
                         </h5>
                         <p className="resume-card__name">
-                            System Engineer (2 years 9 Months)
+                            System Engineer (2018-2021)
                         </p>
                         <p className="resume-card__details">
                             Experience in Front end technologies - React JS, HTML, CSS, JavaScript
@@ -65,7 +75,7 @@ const Resume = () => {
             <div className="row">
                 <div className="col-lg-6 resume-languages">
                     <h5 className="reusme-language__heading">
-                        Language and Framework
+                        Languages and Framework
                     </h5>
                     <div className="resume-language__body mt-3">
                         {

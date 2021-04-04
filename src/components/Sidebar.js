@@ -7,7 +7,8 @@ import {
 	FaGithub,
 	FaMapMarkerAlt,
 	FaEnvelope,
-	FaPhoneAlt
+	FaPhoneAlt,
+	FaLinkedin
 } from "react-icons/fa";
 
 const Sidebar = () =>{
@@ -66,15 +67,27 @@ const Sidebar = () =>{
 			</div> */}
 			<table className="profile-information">
 				<tr>
+					<td className="profile-information__td1"><FaLinkedin size={23}/></td>
+					<td style={{textAlign:"left"}}>
+						<a href="https://www.linkedin.com/in/pavan-pakki-964b63141/" rel="noopener noreferrer" target="_blank">
+							Linkedin
+						</a>
+					</td>
+				</tr>
+				<tr>
 					<td className="profile-information__td1"><FaGithub size={23}/></td>
-					<td style={{textAlign:"left"}}>Github</td>
+					<td style={{textAlign:"left"}}>
+						<a href="https://github.com/pakkipavan" rel="noopener noreferrer" target="_blank">
+							Github
+						</a>
+					</td>
 				</tr>
 				<tr>
 					<td className="profile-information__td1"><FaMapMarkerAlt size={23}/></td>
 					<td style={{textAlign:"left"}}>Chennai, India</td>
 				</tr>
 				<tr>
-					<td className="profile-information__td1"><FaEnvelope/></td>
+					<td className="profile-information__td1"><FaEnvelope size={20}/></td>
 					<td style={{textAlign:"left"}}>pavanpakki786@gmail.com</td>
 				</tr>
 				<tr>

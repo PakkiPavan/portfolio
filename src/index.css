@@ -213,7 +213,7 @@ table.profile-information td{
 }
 .resume-card__heading,
 .resume-language__heading {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-size: 1.6rem;
     font-weight: 700;
     color: #354538;
@@ -231,8 +231,8 @@ table.profile-information td{
 }
 
 .resume-card__details {
-    font-size: 0.9rem;
-    padding-top: 5px;
+    font-size: 1rem;
+    /* padding-top: 2px; */
 }
 
 /* Bar */
