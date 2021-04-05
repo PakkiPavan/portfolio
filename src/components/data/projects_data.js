@@ -2,6 +2,7 @@ import Youtube from '../../assets/projects_images/Youtube.JPG'
 import Mastermind from '../../assets/projects_images/Mastermind.JPG'
 import Login from '../../assets/projects_images/Login.JPG'
 import Portfolio from '../../assets/projects_images/Portfolio.JPG'
+import Effect from '../../assets/projects_images/3DEffect.JPG'
 
 const data_projects = [
     {
@@ -30,6 +31,13 @@ const data_projects = [
         image: Login,
         deployed_url: 'https://login-signup-form.netlify.app/',
         github_url: 'https://github.com/PakkiPavan/Login-Signup-Forms',
+        category: ['HTML','CSS','HTML/CSS']
+    },
+    {
+        name: '3D Effect',
+        image: Effect,
+        deployed_url: 'https://3d-rotation.netlify.app/',
+        github_url: 'https://github.com/PakkiPavan/3D-Effect',
         category: ['HTML','CSS','HTML/CSS']
     },
     {
