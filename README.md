@@ -1,8 +1,20 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Demo](https://pavan-pakki.netlify.app/)
 
-## Available Scripts
+![alt text](https://github.com/PakkiPavan/Portfolio/blob/main/Demo/Portfolio-1.JPG?raw=true)
+![alt text](https://github.com/PakkiPavan/Portfolio/blob/main/Demo/Portfolio-2.JPG?raw=true)
+![alt text](https://github.com/PakkiPavan/Portfolio/blob/main/Demo/Portfolio-3.JPG?raw=true)
+
+
+# Technologies used
+* React JS
+* [Framer Motion](https://www.npmjs.com/package/framer-motion) for Animations
+* [React icons](https://react-icons.github.io/react-icons) for icons
+* [Netlify](https://www.netlify.com/) for Hosting
+
+Inspired from [template](http://tavonline.net/html/mat/default/index.html)
+<!-- ## Available Scripts
 
 In the project directory, you can run:
 
@@ -67,4 +79,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
