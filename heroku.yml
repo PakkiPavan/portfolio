@@ -1,5 +1,5 @@
 build:
   docker:
-    web: Dockerfile
+    web: DockerFile
 run:
   web: yarn start /usr/src/app --hostname 0.0.0.0 --port $PORT
