@@ -13,11 +13,13 @@ WORKDIR /usr/src/app
 
 COPY package.json /usr/src/app
 
+RUN echo "npm install"
 RUN npm install
-
+RUN echo "npm install COMPLETED"
 ADD src /usr/src/app/src
 ADD public /usr/src/app/public
-
+RUN echo "npm build"
 RUN npm build
-
+RUN echo "npm build COMPLETED"
 CMD ["npm", "start"]
+RUN echo "END"
