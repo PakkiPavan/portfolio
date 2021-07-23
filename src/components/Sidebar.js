@@ -33,7 +33,7 @@ const Sidebar = () =>{
 			animate="visible"
 		>
 			<img src={mightycoder} alt="avatar" className="sidebar__avatar"/>
-			<div className="sidebar__name">Pakki Pavan</div>
+			<div className="sidebar__name">Pavan Pakki</div>
 			<div className="sidebar__item sidebar__title">Web developer</div>
 			{/* <a href={resume} download="resume.pdf">
 				<div className="sidebar__item sidebar__resume">
@@ -84,7 +84,7 @@ const Sidebar = () =>{
 				</tr>
 				<tr>
 					<td className="profile-information__td1"><FaMapMarkerAlt size={23}/></td>
-					<td style={{textAlign:"left"}}>Chennai, India</td>
+					<td style={{textAlign:"left"}}>Hyderabad, India</td>
 				</tr>
 				<tr>
 					<td className="profile-information__td1"><FaEnvelope size={20}/></td>
