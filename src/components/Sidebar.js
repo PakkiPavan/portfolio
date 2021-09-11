@@ -88,11 +88,11 @@ const Sidebar = () =>{
 				</tr>
 				<tr>
 					<td className="profile-information__td1"><FaEnvelope size={20}/></td>
-					<td style={{textAlign:"left"}}>pavanpakki786@gmail.com</td>
+					<td style={{textAlign:"left"}}>xyz@gmail.com</td>
 				</tr>
 				<tr>
 					<td className="profile-information__td1"><FaPhoneAlt/></td>
-					<td style={{textAlign:"left"}}>+91 7702556730</td>
+					<td style={{textAlign:"left"}}>XXXXXXXXXX</td>
 				</tr>
         	</table>
 			{/* <a href={resume} download="resume.pdf">
