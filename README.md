@@ -1,11 +1,11 @@
 # Portfolio
 
 [Live Demo](https://pavan-pakki.netlify.app/)
-
+<!--
 ![alt text](https://github.com/PakkiPavan/Portfolio/blob/main/Demo/Portfolio-1.JPG?raw=true)
 ![alt text](https://github.com/PakkiPavan/Portfolio/blob/main/Demo/Portfolio-2.JPG?raw=true)
 ![alt text](https://github.com/PakkiPavan/Portfolio/blob/main/Demo/Portfolio-3.JPG?raw=true)
-
+-->
 
 # Technologies used
 * React JS
