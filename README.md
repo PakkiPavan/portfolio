@@ -13,8 +13,8 @@
 * [React icons](https://react-icons.github.io/react-icons) for icons
 * [Netlify](https://www.netlify.com/) for Hosting
 
-Inspired from [template](http://tavonline.net/html/mat/default/index.html)
-<!-- ## Available Scripts
+<!-- Inspired from [template](http://tavonline.net/html/mat/default/index.html)
+ ## Available Scripts
 
 In the project directory, you can run:
 
