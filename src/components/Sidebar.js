@@ -92,7 +92,7 @@ const Sidebar = () =>{
 				</tr>
 				<tr>
 					<td className="profile-information__td1"><FaPhoneAlt/></td>
-					<td style={{textAlign:"left"}}>XXXXXXXXXX</td>
+					<td style={{textAlign:"left"}}>Testing</td>
 				</tr>
         	</table>
 			{/* <a href={resume} download="resume.pdf">
