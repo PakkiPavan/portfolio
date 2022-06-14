@@ -48,7 +48,7 @@ const Resume = () => {
                             Raghu Engineering College (2014-2018)
                         </p>
                         <p className="resume-card__details">
-                            Aggregate: 87.5%
+                            Aggregate: 86.02%
                         </p>
                     </div>
                 </div>
