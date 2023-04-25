@@ -3,6 +3,7 @@ import skills from "../../data/about-data";
 import { motion } from "framer-motion";
 import "./About.css";
 import SkillCard from '../SkillCard/SkillCard';
+import { Card, CardContent } from '@mui/material';
 
 const About = () => {
     const about_variants = {
@@ -23,30 +24,35 @@ const About = () => {
         }
     }
     return (
-        <motion.div className="about"
-            variants={about_variants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-        >
-            <h6 className="about__intro">
-                Innovative Frontend developer with 4+ years of experience working with global/remote software development
-                teams in large multinational corporations. Award winning competitive programmer with strength in writing clean
-                and efficient code.
-            </h6>
-            <div className="container about__container">
-                <h6 className="about__heading">
-                    My Services
-                </h6>
-                <div className="row">
-                    {
-                        skills.map(skill => (
-                            <SkillCard skill={skill} />
-                        ))
-                    }
-                </div>
-            </div>
-        </motion.div>
+        <Card variant="outlined">
+            <CardContent>
+                About
+            </CardContent>
+        </Card>
+        // <motion.div className="about"
+        //     variants={about_variants}
+        //     initial="hidden"
+        //     animate="visible"
+        //     exit="exit"
+        // >
+        //     <h6 className="about__intro">
+        //         Innovative Frontend developer with 4+ years of experience working with global/remote software development
+        //         teams in large multinational corporations. Award winning competitive programmer with strength in writing clean
+        //         and efficient code.
+        //     </h6>
+        //     <div className="container about__container">
+        //         <h6 className="about__heading">
+        //             My Services
+        //         </h6>
+        //         <div className="row">
+        //             {
+        //                 skills.map(skill => (
+        //                     <SkillCard skill={skill} />
+        //                 ))
+        //             }
+        //         </div>
+        //     </div>
+        // </motion.div>
     )
 }
 

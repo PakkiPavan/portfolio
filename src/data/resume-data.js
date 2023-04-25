@@ -7,7 +7,7 @@ import {
     FaCode
 } from "react-icons/fa";
 import { 
-    DiEclipse,
+    // DiEclipse,
     DiGithubBadge
  } from "react-icons/di";
 
@@ -57,12 +57,12 @@ const tools=[
         name:"VS Code",
         level:"80"
     },
-    {
-        icon:DiEclipse,
-        iconSize:23,
-        name:"Eclipse",
-        level:"60"
-    },
+    // {
+    //     icon:DiEclipse,
+    //     iconSize:23,
+    //     name:"Eclipse",
+    //     level:"60"
+    // },
     {
         icon:DiGithubBadge,
         iconSize:23,
