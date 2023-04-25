@@ -24,13 +24,18 @@ function App() {
       <Box sx={{
         display: 'flex'
       }}>
-        <Box sx={{ width: '20%', margin: '0.5rem' }}>
+        <Box sx={{ width: '15%', margin: '0.5rem' }}>
           <Sidebar />
         </Box>
-        <Box sx={{ width: '80%', margin: '0.5rem' }}>
-          <Card>
+        <Box sx={{ width: '85%', margin: '0.5rem' }}>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="*" element={<About />} />
+          </Routes>
+          {/* <Card>
             <CardContent>
-              {/* <Navbar /> */}
               <Routes>
                 <Route path="/" element={<About />} />
                 <Route path="/resume" element={<Resume />} />
@@ -38,7 +43,7 @@ function App() {
                 <Route path="*" element={<About />} />
               </Routes>
             </CardContent>
-          </Card>
+          </Card> */}
         </Box>
       </Box>
     </ThemeProvider>

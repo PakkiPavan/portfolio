@@ -26,7 +26,7 @@ const About = () => {
     return (
         <Card variant="outlined">
             <CardContent>
-                About
+                About Me
             </CardContent>
         </Card>
         // <motion.div className="about"
