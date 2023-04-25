@@ -1,3 +1,4 @@
+import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import {
@@ -11,21 +12,33 @@ import Projects from './components/Projects/Projects';
 import { Box, Card, CardContent, CssBaseline, createTheme } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-});
+// const darkTheme = createTheme({
+//   palette: {
+//     mode: 'dark',
+//   },
+// });
 
 function App() {
+  const [currentTheme, setCurrentTheme] = React.useState('dark');
+
+  const theme = createTheme({
+    palette: {
+      mode: currentTheme,
+    },
+  });
+
+  const handleSetCurrentTheme=()=>{
+    setCurrentTheme(currentTheme === 'dark' ? 'light' : 'dark');
+  };
+
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box sx={{
         display: 'flex'
       }}>
         <Box sx={{ width: '15%', margin: '0.5rem' }}>
-          <Sidebar />
+          <Sidebar handleSetCurrentTheme={handleSetCurrentTheme} />
         </Box>
         <Box sx={{ width: '85%', margin: '0.5rem' }}>
           <Routes>

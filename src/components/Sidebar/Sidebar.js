@@ -22,7 +22,7 @@ const Item = styled(Paper)(({ theme }) => ({
     // lineHeight: '60px',
 }));
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     const theme = useTheme();
     console.log(theme)
     const sidebar_variant = {
@@ -53,18 +53,9 @@ const Sidebar = () => {
                     <Item elevation={2} sx={{
                         height: '30px',
                         lineHeight: '2 !important',
-                        // fontSize: '1rem !important',
-                        // fontWeight: 'bolder !important',
-                        // marginBottom: '0.5rem !important'
                     }}>
                         Frontend Developer
                     </Item>
-                    {/* <Typography sx={{ fontSize: 16 }}>
-                        PAVAN PAKKI
-                    </Typography>
-                    <Typography sx={{ fontSize: 16 }}>
-                        Frontend Developer
-                    </Typography> */}
                 </CardContent>
             </Card>
             <Card variant="outlined">
@@ -145,7 +136,7 @@ const Sidebar = () => {
                         <Button sx={{
                             textTransform: 'inherit'
                         }}>
-                            <Link to='/' style={{ color: theme.palette.text.primary }}>About</Link>
+                            <Link to='/' style={{ color: theme.palette.text.primary }}>About Me</Link>
                         </Button>
                         <Button sx={{
                             textTransform: 'inherit'
@@ -156,6 +147,11 @@ const Sidebar = () => {
                             textTransform: 'inherit'
                         }}>
                             <Link to='/projects' style={{ color: theme.palette.text.primary }}>Projects</Link>
+                        </Button>
+                        <Button onClick={props.handleSetCurrentTheme} sx={{
+                            textTransform: 'inherit'
+                        }}>
+                            Change Theme
                         </Button>
                     </ButtonGroup>
                 </CardContent>

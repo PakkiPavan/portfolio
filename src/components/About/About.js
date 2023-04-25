@@ -3,7 +3,7 @@ import skills from "../../data/about-data";
 import { motion } from "framer-motion";
 import "./About.css";
 import SkillCard from '../SkillCard/SkillCard';
-import { Card, CardContent } from '@mui/material';
+import { Card, CardContent, CardHeader, Typography } from '@mui/material';
 
 const About = () => {
     const about_variants = {
@@ -26,7 +26,14 @@ const About = () => {
     return (
         <Card variant="outlined">
             <CardContent>
-                About Me
+                <Typography gutterBottom variant="h5" component="div" sx={{ borderBottom: '1px solid' }}>
+                    About Me
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    Innovative Frontend developer with 4+ years of experience working with global/remote software development
+                    teams in large multinational corporations. Award winning competitive programmer with strength in writing clean
+                    and efficient code.
+                </Typography>
             </CardContent>
         </Card>
         // <motion.div className="about"
@@ -36,9 +43,9 @@ const About = () => {
         //     exit="exit"
         // >
         //     <h6 className="about__intro">
-        //         Innovative Frontend developer with 4+ years of experience working with global/remote software development
-        //         teams in large multinational corporations. Award winning competitive programmer with strength in writing clean
-        //         and efficient code.
+        // Innovative Frontend developer with 4+ years of experience working with global/remote software development
+        // teams in large multinational corporations. Award winning competitive programmer with strength in writing clean
+        // and efficient code.
         //     </h6>
         //     <div className="container about__container">
         //         <h6 className="about__heading">
