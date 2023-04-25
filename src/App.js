@@ -12,11 +12,6 @@ import Projects from './components/Projects/Projects';
 import { Box, Card, CardContent, CssBaseline, createTheme } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 
-// const darkTheme = createTheme({
-//   palette: {
-//     mode: 'dark',
-//   },
-// });
 
 function App() {
   const [currentTheme, setCurrentTheme] = React.useState('dark');
