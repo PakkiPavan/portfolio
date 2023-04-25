@@ -30,7 +30,9 @@ const About = () => {
             exit="exit"
         >
             <h6 className="about__intro">
-                I describe myself as someone who's persistant, a quick learner and loves problem solving by using simple and scalable solutions.
+                Innovative Frontend developer with 4+ years of experience working with global/remote software development
+                teams in large multinational corporations. Award winning competitive programmer with strength in writing clean
+                and efficient code.
             </h6>
             <div className="container about__container">
                 <h6 className="about__heading">
@@ -38,8 +40,8 @@ const About = () => {
                 </h6>
                 <div className="row">
                     {
-                        skills.map(skill=>(
-                            <SkillCard skill={skill}/>
+                        skills.map(skill => (
+                            <SkillCard skill={skill} />
                         ))
                     }
                 </div>
