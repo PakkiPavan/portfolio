@@ -1,11 +1,12 @@
 import React from 'react';
 import { Card, CardContent } from '@mui/material';
+import Timeline from '../Timeline/Timeline';
 
 const Experience = () => {
     return (
         <Card variant="outlined">
             <CardContent>
-                Experience
+                <Timeline />
             </CardContent>
         </Card>
     )

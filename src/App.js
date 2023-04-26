@@ -18,7 +18,7 @@ import Education from './components/Education/Education';
 
 function App() {
   const [currentTheme, setCurrentTheme] = React.useState('dark');
-  const [tabIndex, setTabIndex] = React.useState(0);
+  const [tabIndex, setTabIndex] = React.useState(1);
 
   const theme = createTheme({
     palette: {
@@ -55,7 +55,6 @@ function App() {
               <Tab label="About Me" sx={{ outline: 'none !important' }} />
               <Tab label="Experience" sx={{ outline: 'none !important' }} />
               <Tab label="Projects" sx={{ outline: 'none !important' }} />
-              <Tab label="Education" sx={{ outline: 'none !important' }} />
               <Tab label="Contact Me" sx={{ outline: 'none !important' }} />
             </Tabs>
             {/* <Routes>
@@ -69,8 +68,7 @@ function App() {
             {tabIndex === 0 && <About />}
             {tabIndex === 1 && <Experience />}
             {tabIndex === 2 && <Projects />}
-            {tabIndex === 3 && <Education />}
-            {tabIndex === 4 && <Contact />}
+            {tabIndex === 3 && <Contact />}
           </Box>
         </Box>
       </Box>

@@ -32,7 +32,7 @@ const About = () => {
         <Card variant="outlined">
             <CardContent>
                 <Box>
-                    <Typography gutterBottom variant="h5" component="div" sx={{ borderBottom: '1px solid' }}>
+                    <Typography gutterBottom variant="h6" component="div" sx={{ borderBottom: '1px solid' }}>
                         Professional Summary
                     </Typography>
                     <Card>
@@ -53,26 +53,26 @@ const About = () => {
                     </Card>
                 </Box>
                 <Box>
-                    <Typography gutterBottom variant="h5" component="div" sx={{ borderBottom: '1px solid' }}>
+                    <Typography gutterBottom variant="h6" component="div" sx={{ borderBottom: '1px solid' }}>
                         Technical Skills
                     </Typography>
                     <Card>
                         <CardContent sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', textAlign: 'center' }}>
-                            <SkillCard icon={<FaReact/>} skillName="React.js" />
-                            <SkillCard icon={<SiRedux/>} skillName="Redux" />
-                            <SkillCard icon={<FaHtml5/>} skillName="HTML" />
-                            <SkillCard icon={<DiCss3/>} skillName="CSS" />
-                            <SkillCard icon={<SiJavascript/>} skillName="JavaScript" />
-                            <SkillCard icon={<SiTypescript/>} skillName="TypeScript" />
-                            <SkillCard icon={<FaNodeJs/>} skillName="Node.js" />
-                            <SkillCard icon={<SiJest/>} skillName="Jest" />
-                            <SkillCard icon={<FaGithub/>} skillName="Git" />
+                            <SkillCard icon={<FaReact />} skillName="React.js" />
+                            <SkillCard icon={<SiRedux />} skillName="Redux" />
+                            <SkillCard icon={<FaHtml5 />} skillName="HTML" />
+                            <SkillCard icon={<DiCss3 />} skillName="CSS" />
+                            <SkillCard icon={<SiJavascript />} skillName="JavaScript" />
+                            <SkillCard icon={<SiTypescript />} skillName="TypeScript" />
+                            <SkillCard icon={<FaNodeJs />} skillName="Node.js" />
+                            <SkillCard icon={<SiJest />} skillName="Jest" />
+                            <SkillCard icon={<FaGithub />} skillName="Git" />
                             <SkillCard skillName="C" />
                         </CardContent>
                     </Card>
                 </Box>
                 <Box>
-                    <Typography gutterBottom variant="h5" component="div" sx={{ borderBottom: '1px solid' }}>
+                    <Typography gutterBottom variant="h6" component="div" sx={{ borderBottom: '1px solid' }}>
                         Achievements
                     </Typography>
                     <Card>
@@ -94,6 +94,17 @@ const About = () => {
                                 </li>
                                 <li>Finalist - Competitive Programming Hackathon in B.Tech 3rd year</li>
                             </ul>
+                        </CardContent>
+                    </Card>
+                </Box>
+                <Box>
+                    <Typography gutterBottom variant="h6" component="div" sx={{ borderBottom: '1px solid' }}>
+                        Education
+                    </Typography>
+                    <Card>
+                        <CardContent>
+                            <b>Raghu Engineering College (JNTU Kakinada Affiliated) (2014-2018)</b> Andhra Pradesh, India<br/>
+                            <span>Bachelor of Technology (B. Tech) in Electronis and Communication Engineering (86%)</span>
                         </CardContent>
                     </Card>
                 </Box>

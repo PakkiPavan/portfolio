@@ -5,7 +5,7 @@ const SkillCard = (props) => {
     return (
         <Paper elevation={22} sx={{
             width: 'fit-content',
-            padding: '2px 15px',
+            padding: '4px 15px',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
