@@ -73,7 +73,7 @@ const Sidebar = (props) => {
                                 sx={{
                                     '&:hover': {
                                         textDecoration: 'none',
-                                        color: '#fff'
+                                        color: theme.palette.text.primary
                                     }
                                 }}
                             >
@@ -92,7 +92,7 @@ const Sidebar = (props) => {
                                 sx={{
                                     '&:hover': {
                                         textDecoration: 'none',
-                                        color: '#fff'
+                                        color: theme.palette.text.primary
                                     }
                                 }}
                             >
@@ -111,7 +111,7 @@ const Sidebar = (props) => {
                                 sx={{
                                     '&:hover': {
                                         textDecoration: 'none',
-                                        color: '#fff'
+                                        color: theme.palette.text.primary
                                     }
                                 }}
                             >
@@ -123,17 +123,14 @@ const Sidebar = (props) => {
             </Card>
 
             <Card variant="outlined">
-                <CardContent sx={{
-                    // display: 'flex',
-                    // flexDirection: 'column'
-                }}>
+                <CardContent>
                     <ButtonGroup
                         orientation="vertical"
                         sx={{
                             width: '100%'
                         }}
                     >
-                        <Button sx={{
+                        {/* <Button sx={{
                             textTransform: 'inherit'
                         }}>
                             <Link to='/' style={{ color: theme.palette.text.primary }}>About Me</Link>
@@ -147,7 +144,7 @@ const Sidebar = (props) => {
                             textTransform: 'inherit'
                         }}>
                             <Link to='/projects' style={{ color: theme.palette.text.primary }}>Projects</Link>
-                        </Button>
+                        </Button> */}
                         <Button onClick={props.handleSetCurrentTheme} sx={{
                             textTransform: 'inherit'
                         }}>
