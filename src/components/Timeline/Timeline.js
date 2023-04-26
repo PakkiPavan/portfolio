@@ -16,24 +16,44 @@ const Experience = () => {
     const renderKnowMoreDialog = () => {
         // console.log("currentCompanyName", currentCompanyName);
         // console.log(workExperience[currentCompanyName]);
-        let companyClients=workExperience[currentCompanyName];
-        for(let clientName in companyClients){
-            console.log(clientName);
-            console.log(companyClients[clientName]);
-        }
+        let companyClients = workExperience[currentCompanyName];
+
         return (
             <Dialog
                 open={showKnowMoreDialog}
                 onClose={() => setShowKnowMoreDialog(false)}
+                fullWidth
+                maxWidth="lg"
             >
-                <DialogTitle>
+                <DialogTitle align='center'>
                     {knowMoreDialogTitle}
                 </DialogTitle>
                 <DialogContent>
-                    <DialogContentText>
-                        Let Google help apps determine location. This means sending anonymous
-                        location data to Google, even when no apps are running.
-                    </DialogContentText>
+                    {/* <DialogContentText> */}
+                    {
+                        Object.keys(companyClients).map((clientName, index1) => {
+                            console.log(clientName);
+                            console.log(companyClients[clientName]);
+                            let responsibilities = companyClients[clientName];
+                            return (
+                                <React.Fragment key={index1}>
+                                    <Typography variant="h6" component="div">
+                                        Client: {clientName}
+                                    </Typography>
+                                    <ul>
+                                        {
+                                            responsibilities.map((responsibility, index2) => {
+                                                return (
+                                                    <li key={index2}>{responsibility}</li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </React.Fragment>
+                            )
+                        })
+                    }
+                    {/* </DialogContentText> */}
                 </DialogContent>
                 <DialogActions>
                     <Button autoFocus onClick={() => setShowKnowMoreDialog(false)}>
@@ -121,7 +141,7 @@ const Experience = () => {
                                         </Typography>
                                         <div>Frontend developer</div>
                                         <Button
-                                            onClick={() => handleKnowMoreBtnClick('Tata Consultancy Services(TCS)')}
+                                            onClick={() => handleKnowMoreBtnClick('Tata Consultancy Services (TCS)')}
                                             sx={{
                                                 border: 'none !important',
                                                 outline: 'none !important',
