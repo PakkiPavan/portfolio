@@ -24,7 +24,6 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Sidebar = (props) => {
     const theme = useTheme();
-    console.log(theme)
     const sidebar_variant = {
         hidden: {
             x: "-20vw"
