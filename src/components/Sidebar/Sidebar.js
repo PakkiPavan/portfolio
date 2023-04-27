@@ -41,7 +41,7 @@ const Sidebar = (props) => {
             <Card variant="outlined">
                 <CardContent sx={{ padding: '10px', textAlign: 'center' }}>
                     <Item elevation={5} sx={{
-                        height: '45px',
+                        height: 'auto',
                         lineHeight: '3 !important',
                         fontSize: '1rem !important',
                         fontWeight: 'bolder !important',
@@ -50,8 +50,8 @@ const Sidebar = (props) => {
                         PAVAN PAKKI
                     </Item>
                     <Item elevation={2} sx={{
-                        height: '30px',
-                        lineHeight: '2 !important',
+                        height: 'auto',
+                        padding: '5px'
                     }}>
                         Frontend Developer
                     </Item>

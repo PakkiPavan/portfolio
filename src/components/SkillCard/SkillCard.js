@@ -9,7 +9,8 @@ const SkillCard = (props) => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            textAlign: 'center'
+            textAlign: 'center',
+            margin: '5px'
         }}>
             {
                 props.icon && (

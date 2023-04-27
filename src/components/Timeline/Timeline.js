@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card, CardContent, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Typography } from '@mui/material';
-import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@mui/lab';
+import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator, timelineOppositeContentClasses } from '@mui/lab';
 import { useTheme } from '@emotion/react';
 import { workExperience } from '../../data/workExperience';
 
@@ -76,9 +76,13 @@ const Experience = () => {
             {showKnowMoreDialog && renderKnowMoreDialog()}
             <Card variant="outlined">
                 <CardContent>
-                    <Timeline>
+                    <Timeline sx={{
+                        [`& .${timelineOppositeContentClasses.root}`]: {
+                            flex: 0.2,
+                        },
+                    }}>
                         <TimelineItem>
-                            <TimelineOppositeContent color="text.secondary">
+                            <TimelineOppositeContent>
                                 2021-Present
                             </TimelineOppositeContent>
                             <TimelineSeparator>
@@ -86,28 +90,29 @@ const Experience = () => {
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent
-                                // className="timelineCard"
-                                sx={{
-                                    position: 'relative',
-                                    '&:before': {
-                                        content: '" "',
-                                        height: '0',
-                                        position: 'absolute',
-                                        top: '8px',
-                                        width: '0',
-                                        zIndex: '1',
-                                        left: '5px',
-                                        border: `medium solid ${theme.palette.background.paper}`,
-                                        borderWidth: '10px 10px 10px 0',
-                                        borderColor: `transparent ${theme.palette.background.paper} transparent transparent`,
-                                    }
-                                }}
+                            // className="timelineCard"
+                            // sx={{
+                            //     position: 'relative',
+                            //     '&:before': {
+                            //         content: '" "',
+                            //         height: '0',
+                            //         position: 'absolute',
+                            //         top: '8px',
+                            //         width: '0',
+                            //         zIndex: '1',
+                            //         left: '5px',
+                            //         border: `medium solid ${theme.palette.background.paper}`,
+                            //         borderWidth: '10px 10px 10px 0',
+                            //         borderColor: `transparent ${theme.palette.background.paper} transparent transparent`,
+                            //     }
+                            // }}
                             >
                                 <Card>
                                     <CardContent>
                                         <Typography variant="h6" component="div">
                                             Accenture
                                         </Typography>
+                                        {/* <div>Accenture</div> */}
                                         <div>Frontend developer</div>
                                         <Button
                                             onClick={() => handleKnowMoreBtnClick('Accenture')}
@@ -127,7 +132,7 @@ const Experience = () => {
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
-                            <TimelineOppositeContent color="text.secondary">
+                            <TimelineOppositeContent>
                                 2018-2021
                             </TimelineOppositeContent>
                             <TimelineSeparator>
@@ -139,6 +144,7 @@ const Experience = () => {
                                         <Typography variant="h6" component="div">
                                             Tata Consultancy Services(TCS)
                                         </Typography>
+                                        {/* <div>Tata Consultancy Services(TCS)</div> */}
                                         <div>Frontend developer</div>
                                         <Button
                                             onClick={() => handleKnowMoreBtnClick('Tata Consultancy Services (TCS)')}

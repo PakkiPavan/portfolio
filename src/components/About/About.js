@@ -57,7 +57,7 @@ const About = () => {
                         Technical Skills
                     </Typography>
                     <Card>
-                        <CardContent sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', textAlign: 'center' }}>
+                        <CardContent sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap' }}>
                             <SkillCard icon={<FaReact />} skillName="React.js" />
                             <SkillCard icon={<SiRedux />} skillName="Redux" />
                             <SkillCard icon={<FaHtml5 />} skillName="HTML" />
@@ -103,7 +103,7 @@ const About = () => {
                     </Typography>
                     <Card>
                         <CardContent>
-                            <b>Raghu Engineering College (JNTU Kakinada Affiliated) (2014-2018)</b> Andhra Pradesh, India<br />
+                            <b>Raghu Engineering College (JNTU Kakinada Affiliated) (2014-2018),</b> Andhra Pradesh, India<br />
                             <span>Bachelor of Technology (B. Tech) in Electronis and Communication Engineering (86%)</span>
                         </CardContent>
                     </Card>
