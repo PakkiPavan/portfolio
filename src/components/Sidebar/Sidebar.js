@@ -1,18 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
 import {
-    // FaDownload,
-    FaGithub,
-    FaMapMarkerAlt,
-    FaEnvelope,
-    FaPhoneAlt,
-    FaLinkedin
+    FaGithub
 } from "react-icons/fa";
-import { Avatar, Box, Button, ButtonGroup, Card, CardActions, CardContent, Link as MuiLink, List, ListItem, ListItemAvatar, ListItemIcon, ListItemText, Typography, Paper } from "@mui/material";
-import Navbar from "../Navbar/Navbar";
-import { Link } from "react-router-dom";
+import { Box, Button, ButtonGroup, Card, CardContent, Link as MuiLink, Paper } from "@mui/material";
 import { useTheme } from "@emotion/react";
-import styled from "@emotion/styled";
 
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,

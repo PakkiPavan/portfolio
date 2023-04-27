@@ -1,26 +1,14 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Sidebar from './components/Sidebar/Sidebar';
-import {
-  Route,
-  Routes,
-} from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 import About from './components/About/About';
-import Resume from './components/Resume/Resume';
 import Projects from './components/Projects/Projects';
-import { Box, Card, CardContent, CssBaseline, Tab, Tabs, createTheme, useMediaQuery } from '@mui/material';
-import { ThemeProvider } from '@emotion/react';
-import Contact from './components/Contact/Contact';
+import { Box, CssBaseline, Tab, Tabs, ThemeProvider, createTheme } from '@mui/material';
 import Experience from './components/Experience/Experience';
-import Education from './components/Education/Education';
 import Header from './components/Header/Header';
 
 
 function App() {
-  const [currentTheme, setCurrentTheme] = React.useState('dark');
+  const [currentTheme, setCurrentTheme] = React.useState('light');
   const [tabIndex, setTabIndex] = React.useState(0);
-  const maxWidthMediaQuery = useMediaQuery('(max-width:900px)');
 
   const theme = createTheme({
     palette: {

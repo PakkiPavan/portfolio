@@ -1,9 +1,7 @@
 import React from 'react'
-import skills from "../../data/about-data";
-import { motion } from "framer-motion";
 import "./About.css";
 import SkillCard from '../SkillCard/SkillCard';
-import { Box, Card, CardContent, CardHeader, Link, List, ListItem, ListItemText, Paper, Typography } from '@mui/material';
+import { Box, Card, CardContent, Typography } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import { FaGithub, FaHtml5, FaNodeJs, FaReact } from 'react-icons/fa';
 import { SiJavascript, SiJest, SiRedux, SiTypescript } from 'react-icons/si';
@@ -11,23 +9,7 @@ import { DiCss3 } from 'react-icons/di';
 
 const About = () => {
     const theme = useTheme();
-    const about_variants = {
-        hidden: {
-            opacity: 0
-        },
-        visible: {
-            opacity: 1,
-            transition: {
-                delay: 0.2, duration: 0.6,
-            }
-        },
-        exit: {
-            opacity: 0,
-            transition: {
-                ease: 'easeInOut'
-            }
-        }
-    }
+
     return (
         <Card variant="outlined">
             <CardContent>
@@ -82,13 +64,13 @@ const About = () => {
                                 <li>Fast Coder - Capgemini Tech Challenge coding competition-2017</li>
                                 <li>
                                     Global Rank 820 - Global level coding competition TCS Codevita-2017 - {" "}
-                                    <a href="https://drive.google.com/file/d/1WJNFvcOwnBHSDv3ntJgZ26Lgd845V3YF/view" target="_blank" style={{ color: 'cornflowerblue' }}>
+                                    <a href="https://drive.google.com/file/d/1WJNFvcOwnBHSDv3ntJgZ26Lgd845V3YF/view" target="_blank" rel="noreferrer" style={{ color: 'cornflowerblue' }}>
                                         Certificate
                                     </a>
                                 </li>
                                 <li>
                                     Bronze medal - One of the Hackerrank weekly contests - {" "}
-                                    <a href="https://www.hackerrank.com/results/infinitum18/pavanpakki786" target="_blank" style={{ color: 'cornflowerblue' }}>
+                                    <a href="https://www.hackerrank.com/results/infinitum18/pavanpakki786" target="_blank" rel="noreferrer" style={{ color: 'cornflowerblue' }}>
                                         Certificate
                                     </a>
                                 </li>

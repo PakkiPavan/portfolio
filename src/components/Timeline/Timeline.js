@@ -1,7 +1,6 @@
 import React from 'react';
-import { Button, Card, CardContent, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Typography, useMediaQuery } from '@mui/material';
+import { Button, Card, CardContent, Dialog, DialogActions, DialogContent, DialogTitle, Typography, useMediaQuery } from '@mui/material';
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator, timelineOppositeContentClasses } from '@mui/lab';
-import { useTheme } from '@emotion/react';
 import { workExperience } from '../../data/workExperience';
 
 
