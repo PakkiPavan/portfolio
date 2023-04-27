@@ -1,35 +1,9 @@
-import React, { useState } from 'react'
-import { motion } from "framer-motion";
-import ProjectCard from '../ProjectCard/ProjectCard';
-import data_projects from '../../data/projects-data';
-import { Box, Card, CardContent, Paper, Typography } from '@mui/material';
+import React from 'react'
+import { Card, CardContent, Paper } from '@mui/material';
 import { FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
-    const [projects, setProjects] = useState(data_projects);
-    const [active, setActive] = useState("All");
-    const handleFilterCategory = (name) => {
-        const new_array = data_projects.filter(project => project.category.includes(name));
-        setProjects(new_array);
-        setActive(name);
-    }
-    const project_variants = {
-        hidden: {
-            opacity: 0
-        },
-        visible: {
-            opacity: 1,
-            transition: {
-                delay: 0.2, duration: 0.6,
-            }
-        },
-        exit: {
-            opacity: 0,
-            transition: {
-                ease: 'easeInOut'
-            }
-        }
-    }
+
     return (
         <Card variant='outlined'>
             <CardContent>
@@ -44,6 +18,7 @@ const Projects = () => {
                     <a
                         href="https://mastermind-board-game.netlify.app/"
                         target="_blank"
+                        rel="noreferrer"
                         style={{ marginRight: '10px', color: 'cornflowerblue' }}
                     >
                         Mastermind Game
@@ -51,6 +26,7 @@ const Projects = () => {
                     <a
                         href="https://github.com/PakkiPavan/mastermind-board-game"
                         target="_blank"
+                        rel="noreferrer"
                         style={{ fontSize: '20px', display: 'flex', color: 'cornflowerblue' }}
                     >
                         <FaGithub />
