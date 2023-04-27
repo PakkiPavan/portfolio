@@ -58,66 +58,79 @@ const Sidebar = (props) => {
                 </CardContent>
             </Card>
             <Card variant="outlined">
-                <CardContent sx={{ padding: '0px', textAlign: 'center' }}>
-                    <List>
+                <CardContent sx={{ padding: '0px', textAlign: 'center' }} elevation={5}>
+                    <Item elevation={2} sx={{
+                        height: 'auto',
+                        padding: '5px'
+                    }}>
+                        <MuiLink
+                            href="https://www.linkedin.com/in/pavan-pakki"
+                            target="_blank"
+                            underline="none"
+                            color="inherit"
+                            sx={{
+                                marginRight: '10px',
+                                '&:hover': {
+                                    textDecoration: 'none',
+                                    color: theme.palette.text.primary
+                                }
+                            }}
+                        >
+                            <FaLinkedin size={23} />
+                        </MuiLink>
+                        <MuiLink
+                            href="https://github.com/pakkipavan"
+                            target="_blank"
+                            underline="none"
+                            color="inherit"
+                            sx={{
+                                '&:hover': {
+                                    textDecoration: 'none',
+                                    color: theme.palette.text.primary
+                                }
+                            }}
+                        >
+                            <FaGithub size={23} />
+                        </MuiLink>
+                    </Item>
+                    {/* <List>
                         <ListItem sx={{ justifyContent: 'left' }}>
                             <ListItemIcon sx={{ minWidth: '30px' }}>
-                                <FaLinkedin size={23} />
+                                <MuiLink
+                                    href="https://www.linkedin.com/in/pavan-pakki"
+                                    target="_blank"
+                                    underline="none"
+                                    color="inherit"
+                                    sx={{
+                                        '&:hover': {
+                                            textDecoration: 'none',
+                                            color: theme.palette.text.primary
+                                        }
+                                    }}
+                                >
+                                    <FaLinkedin size={23} />
+                                </MuiLink>
                             </ListItemIcon>
-                            <MuiLink
-                                href="https://www.linkedin.com/in/pavan-pakki"
-                                target="_blank"
-                                underline="none"
-                                color="inherit"
-                                sx={{
-                                    '&:hover': {
-                                        textDecoration: 'none',
-                                        color: theme.palette.text.primary
-                                    }
-                                }}
-                            >
-                                Linkedin
-                            </MuiLink>
                         </ListItem>
                         <ListItem sx={{ justifyContent: 'left' }}>
                             <ListItemIcon sx={{ minWidth: '30px' }}>
-                                <FaGithub size={23} />
+                                <MuiLink
+                                    href="https://github.com/pakkipavan"
+                                    target="_blank"
+                                    underline="none"
+                                    color="inherit"
+                                    sx={{
+                                        '&:hover': {
+                                            textDecoration: 'none',
+                                            color: theme.palette.text.primary
+                                        }
+                                    }}
+                                >
+                                    <FaGithub size={23} />
+                                </MuiLink>
                             </ListItemIcon>
-                            <MuiLink
-                                href="https://github.com/pakkipavan"
-                                target="_blank"
-                                underline="none"
-                                color="inherit"
-                                sx={{
-                                    '&:hover': {
-                                        textDecoration: 'none',
-                                        color: theme.palette.text.primary
-                                    }
-                                }}
-                            >
-                                Github
-                            </MuiLink>
                         </ListItem>
-                        <ListItem sx={{ justifyContent: 'left' }}>
-                            <ListItemIcon sx={{ minWidth: '30px' }}>
-                                <FaMapMarkerAlt size={23} />
-                            </ListItemIcon>
-                            <MuiLink
-                                href="#"
-                                target="_blank"
-                                underline="none"
-                                color="inherit"
-                                sx={{
-                                    '&:hover': {
-                                        textDecoration: 'none',
-                                        color: theme.palette.text.primary
-                                    }
-                                }}
-                            >
-                                Hyderbad
-                            </MuiLink>
-                        </ListItem>
-                    </List>
+                    </List> */}
                 </CardContent>
             </Card>
 

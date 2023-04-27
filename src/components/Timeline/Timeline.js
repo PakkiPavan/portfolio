@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, CardContent, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Typography } from '@mui/material';
+import { Button, Card, CardContent, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Typography, useMediaQuery } from '@mui/material';
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator, timelineOppositeContentClasses } from '@mui/lab';
 import { useTheme } from '@emotion/react';
 import { workExperience } from '../../data/workExperience';
@@ -9,8 +9,8 @@ const Experience = () => {
     const [showKnowMoreDialog, setShowKnowMoreDialog] = React.useState(false);
     const [knowMoreDialogTitle, setKnowMoreDialogTitle] = React.useState("");
     const [currentCompanyName, setCurrentCompanyName] = React.useState();
-    const theme = useTheme();
-    // console.log(theme);
+    // const theme = useTheme();
+    const maxWidthTimelineMediaQuery = useMediaQuery('(max-width:620px)');
 
 
     const renderKnowMoreDialog = () => {
@@ -81,10 +81,18 @@ const Experience = () => {
                             flex: 0.2,
                         },
                     }}>
-                        <TimelineItem>
-                            <TimelineOppositeContent>
-                                2021-Present
-                            </TimelineOppositeContent>
+                        <TimelineItem sx={{
+                            '&:before': {
+                                display: 'none'
+                            }
+                        }}>
+                            {
+                                !maxWidthTimelineMediaQuery && (
+                                    <TimelineOppositeContent>
+                                        2021-Present
+                                    </TimelineOppositeContent>
+                                )
+                            }
                             <TimelineSeparator>
                                 <TimelineDot />
                                 <TimelineConnector />
@@ -112,7 +120,11 @@ const Experience = () => {
                                         <Typography variant="h6" component="div">
                                             Accenture
                                         </Typography>
-                                        {/* <div>Accenture</div> */}
+                                        {
+                                            maxWidthTimelineMediaQuery && (
+                                                <div>2021-Present</div>
+                                            )
+                                        }
                                         <div>Frontend developer</div>
                                         <Button
                                             onClick={() => handleKnowMoreBtnClick('Accenture')}
@@ -131,10 +143,18 @@ const Experience = () => {
                                 </Card>
                             </TimelineContent>
                         </TimelineItem>
-                        <TimelineItem>
-                            <TimelineOppositeContent>
-                                2018-2021
-                            </TimelineOppositeContent>
+                        <TimelineItem sx={{
+                            '&:before': {
+                                display: 'none'
+                            }
+                        }}>
+                            {
+                                !maxWidthTimelineMediaQuery && (
+                                    <TimelineOppositeContent>
+                                        2018-2021
+                                    </TimelineOppositeContent>
+                                )
+                            }
                             <TimelineSeparator>
                                 <TimelineDot />
                             </TimelineSeparator>
@@ -144,7 +164,11 @@ const Experience = () => {
                                         <Typography variant="h6" component="div">
                                             Tata Consultancy Services(TCS)
                                         </Typography>
-                                        {/* <div>Tata Consultancy Services(TCS)</div> */}
+                                        {
+                                            maxWidthTimelineMediaQuery && (
+                                                <div>2018-2021</div>
+                                            )
+                                        }
                                         <div>Frontend developer</div>
                                         <Button
                                             onClick={() => handleKnowMoreBtnClick('Tata Consultancy Services (TCS)')}

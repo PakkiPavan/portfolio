@@ -57,7 +57,7 @@ function App() {
               <Tab label="About Me" sx={{ outline: 'none !important' }} />
               <Tab label="Experience" sx={{ outline: 'none !important' }} />
               <Tab label="Projects" sx={{ outline: 'none !important' }} />
-              <Tab label="Contact Me" sx={{ outline: 'none !important' }} />
+              {/* <Tab label="Contact Me" sx={{ outline: 'none !important' }} /> */}
             </Tabs>
             {/* <Routes>
               <Route path="/" element={<About />} />
@@ -70,7 +70,7 @@ function App() {
             {tabIndex === 0 && <About />}
             {tabIndex === 1 && <Experience />}
             {tabIndex === 2 && <Projects />}
-            {tabIndex === 3 && <Contact />}
+            {/* {tabIndex === 3 && <Contact />} */}
           </Box>
         </Box>
       </Box>
