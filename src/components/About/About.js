@@ -82,13 +82,13 @@ const About = () => {
                                 <li>Fast Coder - Capgemini Tech Challenge coding competition-2017</li>
                                 <li>
                                     Global Rank 820 - Global level coding competition TCS Codevita-2017 - {" "}
-                                    <a href="https://drive.google.com/file/d/1WJNFvcOwnBHSDv3ntJgZ26Lgd845V3YF/view" target="_blank">
+                                    <a href="https://drive.google.com/file/d/1WJNFvcOwnBHSDv3ntJgZ26Lgd845V3YF/view" target="_blank" style={{ color: 'cornflowerblue' }}>
                                         Certificate
                                     </a>
                                 </li>
                                 <li>
                                     Bronze medal - One of the Hackerrank weekly contests - {" "}
-                                    <a href="https://www.hackerrank.com/results/infinitum18/pavanpakki786" target="_blank">
+                                    <a href="https://www.hackerrank.com/results/infinitum18/pavanpakki786" target="_blank" style={{ color: 'cornflowerblue' }}>
                                         Certificate
                                     </a>
                                 </li>
@@ -103,7 +103,7 @@ const About = () => {
                     </Typography>
                     <Card>
                         <CardContent>
-                            <b>Raghu Engineering College (JNTU Kakinada Affiliated) (2014-2018)</b> Andhra Pradesh, India<br/>
+                            <b>Raghu Engineering College (JNTU Kakinada Affiliated) (2014-2018)</b> Andhra Pradesh, India<br />
                             <span>Bachelor of Technology (B. Tech) in Electronis and Communication Engineering (86%)</span>
                         </CardContent>
                     </Card>

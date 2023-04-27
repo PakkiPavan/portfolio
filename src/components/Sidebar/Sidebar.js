@@ -40,7 +40,7 @@ const Sidebar = (props) => {
         <Box>
             <Card variant="outlined">
                 <CardContent sx={{ padding: '10px', textAlign: 'center' }}>
-                    <Item elevation={20} sx={{
+                    <Item elevation={5} sx={{
                         height: '45px',
                         lineHeight: '3 !important',
                         fontSize: '1rem !important',

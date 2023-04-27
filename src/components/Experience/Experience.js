@@ -4,11 +4,7 @@ import Timeline from '../Timeline/Timeline';
 
 const Experience = () => {
     return (
-        <Card variant="outlined">
-            <CardContent>
-                <Timeline />
-            </CardContent>
-        </Card>
+        <Timeline />
     )
 }
 

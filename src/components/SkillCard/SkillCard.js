@@ -3,7 +3,7 @@ import React from 'react'
 
 const SkillCard = (props) => {
     return (
-        <Paper elevation={22} sx={{
+        <Paper elevation={5} sx={{
             width: 'fit-content',
             padding: '4px 15px',
             display: 'flex',

@@ -18,7 +18,7 @@ import Education from './components/Education/Education';
 
 function App() {
   const [currentTheme, setCurrentTheme] = React.useState('dark');
-  const [tabIndex, setTabIndex] = React.useState(1);
+  const [tabIndex, setTabIndex] = React.useState(0);
 
   const theme = createTheme({
     palette: {

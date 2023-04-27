@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { motion } from "framer-motion";
 import ProjectCard from '../ProjectCard/ProjectCard';
 import data_projects from '../../data/projects-data';
-import { Card, CardContent } from '@mui/material';
+import { Box, Card, CardContent, Paper, Typography } from '@mui/material';
+import { FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
     const [projects, setProjects] = useState(data_projects);
@@ -30,9 +31,31 @@ const Projects = () => {
         }
     }
     return (
-        <Card variant="outlined">
+        <Card variant='outlined'>
             <CardContent>
-                Projects
+                <Paper elevation={5} sx={{
+                    width: 'fit-content',
+                    padding: '10px 20px',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    textAlign: 'center'
+                }}>
+                    <a
+                        href="https://mastermind-board-game.netlify.app/"
+                        target="_blank"
+                        style={{ marginRight: '10px', color: 'cornflowerblue' }}
+                    >
+                        Mastermind Game
+                    </a>
+                    <a
+                        href="https://github.com/PakkiPavan/mastermind-board-game"
+                        target="_blank"
+                        style={{ fontSize: '20px', display: 'flex', color: 'cornflowerblue' }}
+                    >
+                        <FaGithub />
+                    </a>
+                </Paper>
             </CardContent>
         </Card>
         // <motion.div className="container projects"
