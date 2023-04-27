@@ -14,6 +14,7 @@ import { ThemeProvider } from '@emotion/react';
 import Contact from './components/Contact/Contact';
 import Experience from './components/Experience/Experience';
 import Education from './components/Education/Education';
+import Header from './components/Header/Header';
 
 
 function App() {
@@ -39,13 +40,13 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box sx={{
-        display: 'flex',
-        flexDirection: maxWidthMediaQuery ? 'column': 'row'
+        // display: 'flex',
+        // flexDirection: maxWidthMediaQuery ? 'column': 'row'
       }}>
-        <Box sx={{ width: maxWidthMediaQuery ? '100%' : '15%', margin: '0.5rem' }}>
-          <Sidebar handleSetCurrentTheme={handleSetCurrentTheme} />
+        <Box>
+          <Header handleSetCurrentTheme={handleSetCurrentTheme} />
         </Box>
-        <Box sx={{ width: maxWidthMediaQuery ? '100%' : '85%', margin: '0.5rem', }}>
+        <Box sx={{ margin: '0.5rem', }}>
           <Box>
             <Tabs
               value={tabIndex}
