@@ -64,7 +64,6 @@ const Experience = () => {
     };
 
     const handleKnowMoreBtnClick = (dialogTitle) => {
-        console.log(workExperience);
         setCurrentCompanyName(dialogTitle);
         setKnowMoreDialogTitle(`${dialogTitle} Work Experience`);
         setShowKnowMoreDialog(true);

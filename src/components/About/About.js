@@ -27,9 +27,10 @@ const About = () => {
                                     fontSize: '16px'
                                 }}
                             >
-                                Innovative Frontend developer with 4+ years of experience working with global/remote software development
-                                teams in large multinational corporations. Award winning competitive programmer with strength in writing clean
-                                and efficient code.
+                                Innovative Frontend Developer with almost 5 years of experience working with global and remote software
+                                development teams in large multinational corporations, I excel at writing clean and efficient code. Additionally, my
+                                expertise in competitive programming has earned me multiple awards and recognition for my ability to tackle
+                                complex challenges with creative solutions.
                             </Typography>
                         </CardContent>
                     </Card>
@@ -60,21 +61,21 @@ const About = () => {
                     <Card>
                         <CardContent>
                             <ul>
-                                <li>Winner - Mobile App development Hackathon conducted by Standard Chartered GBS-2019</li>
-                                <li>Fast Coder - Capgemini Tech Challenge coding competition-2017</li>
+                                <li>Won the Mobile App Development Hackathon conducted by Standard Chartered GBS in 2019.</li>
+                                <li>Awarded <b>Fast Coder</b> title in the Capgemini Tech Challenge coding competition in 2017.</li>
                                 <li>
-                                    Global Rank 820 - Global level coding competition TCS Codevita-2017 - {" "}
+                                    Achieved a Global Rank of <b>820</b> out of 99,473 participants in the TCS Codevita 2017, a prestigious global-level coding competition. - {" "}
                                     <a href="https://drive.google.com/file/d/1WJNFvcOwnBHSDv3ntJgZ26Lgd845V3YF/view" target="_blank" rel="noreferrer" style={{ color: 'cornflowerblue' }}>
                                         Certificate
                                     </a>
                                 </li>
                                 <li>
-                                    Bronze medal - One of the Hackerrank weekly contests - {" "}
+                                    Received a <b>Bronze medal</b> in one of the weekly contests conducted by Hackerrank. - {" "}
                                     <a href="https://www.hackerrank.com/results/infinitum18/pavanpakki786" target="_blank" rel="noreferrer" style={{ color: 'cornflowerblue' }}>
                                         Certificate
                                     </a>
                                 </li>
-                                <li>Finalist - Competitive Programming Hackathon in B.Tech 3rd year</li>
+                                <li>Was a <b>Finalist</b> in a Competitive Programming Hackathon during the third year of B.Tech studies.</li>
                             </ul>
                         </CardContent>
                     </Card>

@@ -32,6 +32,31 @@ const Projects = () => {
                         <FaGithub />
                     </a>
                 </Paper>
+                <Paper elevation={5} sx={{
+                    width: 'fit-content',
+                    padding: '10px 20px',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    textAlign: 'center'
+                }}>
+                    <a
+                        href="https://mastermind-board-game.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ marginRight: '10px', color: 'cornflowerblue' }}
+                    >
+                        Portfolio
+                    </a>
+                    <a
+                        href="https://github.com/PakkiPavan/portfolio"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ fontSize: '20px', display: 'flex', color: 'cornflowerblue' }}
+                    >
+                        <FaGithub />
+                    </a>
+                </Paper>
             </CardContent>
         </Card>
         // <motion.div className="container projects"
