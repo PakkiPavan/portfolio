@@ -6,7 +6,7 @@ const Projects = () => {
 
     return (
         <Card variant='outlined'>
-            <CardContent>
+            <CardContent sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap', gap: '10px' }}>
                 <Paper elevation={5} sx={{
                     width: 'fit-content',
                     padding: '10px 20px',
@@ -41,7 +41,7 @@ const Projects = () => {
                     textAlign: 'center'
                 }}>
                     <a
-                        href="https://mastermind-board-game.netlify.app/"
+                        href="https://pavan-pakki.netlify.app/"
                         target="_blank"
                         rel="noreferrer"
                         style={{ marginRight: '10px', color: 'cornflowerblue' }}
