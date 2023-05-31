@@ -15,12 +15,11 @@ const ProjectCard = (props) => {
             alignItems: 'center',
             textAlign: 'center'
         }}>
-            <div>
+            <div style={{ marginBottom: '10px' }}>
                 <a
                     href={props.deployedUrl}
                     target="_blank"
                     rel="noreferrer"
-                    style={{ marginBottom: '10px' }}
                 >
                     <img
                         src={props.projectImage}
