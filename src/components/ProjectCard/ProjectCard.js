@@ -2,22 +2,59 @@ import React from 'react';
 import {
     FaGithub
 } from "react-icons/fa";
-const ProjectCard = ({ project: { name, image, deployed_url, github_url } }) => {
+import { Paper } from '@mui/material';
+
+const ProjectCard = (props) => {
     return (
-        <div className="projectCard col-md-6 col-lg-4 my-2">
-            <figure className="projectCard__wrapper">
-                <a href={deployed_url} rel="noopener noreferrer" target="_blank">
-                    <img src={image} alt={name} className="projectCard__image" />
+        <Paper elevation={5} sx={{
+            width: 'fit-content',
+            padding: '10px 20px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center'
+        }}>
+            <div>
+                <a
+                    href={props.deployedUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ marginBottom: '10px' }}
+                >
+                    <img
+                        src={props.projectImage}
+                        alt={`demoImage-${props.projectIndex}`}
+                        style={{
+                            height: '75px'
+                        }}
+                    />
                 </a>
-                <div className="projectCard__title">
-                    <a href={github_url} rel="noopener noreferrer" target="_blank" style={{ color: "#2193b0" }}>
-                        {/* <img src={github} alt="github link" className="projectCard__icon" /> */}
-                        <FaGithub size={23} className="mr-2" />
-                    </a>
-                    {name}
-                </div>
-            </figure>
-        </div>
+            </div>
+            <div style={{
+                display: 'flex'
+            }}>
+                <a
+                    href={props.deployedUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ marginRight: '10px', color: 'cornflowerblue' }}
+                >
+                    {props.projectName}
+                </a>
+                <a
+                    href={props.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ fontSize: '20px', display: 'flex', color: 'cornflowerblue' }}
+                >
+                    <FaGithub />
+                </a>
+            </div>
+            <div>
+                <b>Technologies used:{" "}</b>{props.TechnologiesUsed}
+            </div>
+        </Paper>
     )
 }
 

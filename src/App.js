@@ -45,7 +45,7 @@ function App() {
             >
               <Tab label="About Me" sx={{ outline: 'none !important' }} />
               <Tab label="Experience" sx={{ outline: 'none !important' }} />
-              <Tab label="Projects" sx={{ outline: 'none !important' }} />
+              <Tab label="Personal Projects" sx={{ outline: 'none !important' }} />
               {/* <Tab label="Contact Me" sx={{ outline: 'none !important' }} /> */}
             </Tabs>
             {/* <Routes>
