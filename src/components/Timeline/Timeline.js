@@ -55,7 +55,11 @@ const Experience = () => {
                     {/* </DialogContentText> */}
                 </DialogContent>
                 <DialogActions>
-                    <Button autoFocus onClick={() => setShowKnowMoreDialog(false)}>
+                    <Button
+                        variant="contained"
+                        autoFocus
+                        onClick={() => setShowKnowMoreDialog(false)}
+                    >
                         Close
                     </Button>
                 </DialogActions>
