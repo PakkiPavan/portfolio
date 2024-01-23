@@ -37,7 +37,7 @@ const Header = (props) => {
                         padding: '3px 15px'
                     }}>
                         <div>PAVAN PAKKI</div>
-                        <div>Frontend Developer</div>
+                        <div>Full Stack Developer</div>
                         <div>
                             <MuiLink
                                 href="https://www.linkedin.com/in/pavan-pakki"

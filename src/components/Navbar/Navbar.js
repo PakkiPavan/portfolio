@@ -7,7 +7,7 @@ const Navbar = () => {
     const [active, setActive] = useState("");
     useEffect(() => {
         let currentUrl = window.location.href;
-        console.log(currentUrl);
+        // console.log(currentUrl);
         if (currentUrl.endsWith("/")) {
             setActive("About");
         }

@@ -27,7 +27,7 @@ const About = () => {
                                     fontSize: '16px'
                                 }}
                             >
-                                Innovative Frontend Developer with almost 5 years of experience working with global and remote software
+                                Innovative Full Stack Developer with almost 5.6 years of experience working with global and remote software
                                 development teams in large multinational corporations, I excel at writing clean and efficient code. Additionally, my
                                 expertise in competitive programming has earned me multiple awards and recognition for my ability to tackle
                                 complex challenges with creative solutions.
@@ -42,12 +42,12 @@ const About = () => {
                     <Card>
                         <CardContent sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap' }}>
                             <SkillCard icon={<FaReact />} skillName="React.js" />
-                            <SkillCard icon={<SiRedux />} skillName="Redux" />
+                            <SkillCard icon={<FaNodeJs />} skillName="Node.js" />
                             <SkillCard icon={<FaHtml5 />} skillName="HTML" />
                             <SkillCard icon={<DiCss3 />} skillName="CSS" />
                             <SkillCard icon={<SiJavascript />} skillName="JavaScript" />
+                            <SkillCard icon={<SiRedux />} skillName="Redux" />
                             <SkillCard icon={<SiTypescript />} skillName="TypeScript" />
-                            <SkillCard icon={<FaNodeJs />} skillName="Node.js" />
                             <SkillCard icon={<SiJest />} skillName="Jest" />
                             <SkillCard icon={<FaGithub />} skillName="Git" />
                             <SkillCard skillName="C" />

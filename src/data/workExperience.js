@@ -7,6 +7,9 @@ export const workExperience = {
             "Designed web interface for Microsoft’s internal product to manage support engineers procedures and checklists. (React, TypeScript, Redux)",
             "Developed internal software for Microsoft’s Azure Cloud business to automate the troubleshooting process for Azure support engineers. (Node.js)"
         ],
+        'Intel': [
+            "Currently working on a web portal providing a one-stop solution for all IT automation needs. (React.js, Node.js, MSSQL)",
+        ],
     },
     'Tata Consultancy Services (TCS)': {
         // Client-1

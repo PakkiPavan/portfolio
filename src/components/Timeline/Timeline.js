@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Card, CardContent, Dialog, DialogActions, DialogContent, DialogTitle, Typography, useMediaQuery } from '@mui/material';
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator, timelineOppositeContentClasses } from '@mui/lab';
 import { workExperience } from '../../data/workExperience';
+import { timelineExperience } from '../../data/timelineExperience';
 
 
 const Experience = () => {
@@ -27,12 +28,12 @@ const Experience = () => {
                 <DialogTitle align='center'>
                     {knowMoreDialogTitle}
                 </DialogTitle>
-                <DialogContent>
+                <DialogContent dividers>
                     {/* <DialogContentText> */}
                     {
                         Object.keys(companyClients).map((clientName, index1) => {
-                            console.log(clientName);
-                            console.log(companyClients[clientName]);
+                            // console.log(clientName);
+                            // console.log(companyClients[clientName]);
                             let responsibilities = companyClients[clientName];
                             return (
                                 <React.Fragment key={index1}>
@@ -77,6 +78,67 @@ const Experience = () => {
         <>
             {showKnowMoreDialog && renderKnowMoreDialog()}
             <Card variant="outlined">
+                <CardContent>
+                    <Timeline sx={{
+                        [`& .${timelineOppositeContentClasses.root}`]: {
+                            flex: 0.2,
+                        },
+                    }}>
+                        {
+                            timelineExperience.map((company, index) => {
+                                return (
+                                    <TimelineItem key={index} sx={{
+                                        '&:before': {
+                                            display: 'none'
+                                        }
+                                    }}>
+                                        {
+                                            !maxWidthTimelineMediaQuery && (
+                                                <TimelineOppositeContent>
+                                                    {company.experienceYearRange}
+                                                </TimelineOppositeContent>
+                                            )
+                                        }
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            {index !== timelineExperience.length - 1 && <TimelineConnector />}
+                                        </TimelineSeparator>
+                                        <TimelineContent>
+                                            <Card>
+                                                <CardContent>
+                                                    <Typography variant="h6" component="div">
+                                                        {company.name}
+                                                    </Typography>
+                                                    {
+                                                        maxWidthTimelineMediaQuery && (
+                                                            <div>{company.experienceYearRange}</div>
+                                                        )
+                                                    }
+                                                    <div>{company.role}</div>
+                                                    <Button
+                                                        onClick={() => handleKnowMoreBtnClick(company.name)}
+                                                        sx={{
+                                                            border: 'none !important',
+                                                            outline: 'none !important',
+                                                            color: 'cornflowerblue',
+                                                            background: 'none',
+                                                            padding: '0',
+                                                            textTransform: 'inherit'
+                                                        }}
+                                                    >
+                                                        Know More
+                                                    </Button>
+                                                </CardContent>
+                                            </Card>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                )
+                            })
+                        }
+                    </Timeline>
+                </CardContent>
+            </Card>
+            {/* <Card variant="outlined">
                 <CardContent>
                     <Timeline sx={{
                         [`& .${timelineOppositeContentClasses.root}`]: {
@@ -191,7 +253,7 @@ const Experience = () => {
                         </TimelineItem>
                     </Timeline>
                 </CardContent>
-            </Card>
+            </Card> */}
         </>
     )
 }
